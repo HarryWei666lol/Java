@@ -1,0 +1,190 @@
+-------------------
+CSE247 Robot tester starts testing lab8 on 2017-11-23 17:35:26 -0600
+
+========
+Testing in ./GradingRepos/./cse131-f17-students-wei.xianda: lab8 as of 2017-11-14 20:00
+========
+Now in: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+HEAD is now at b102896 robograde
+No local changes to save
+
+Updating b102896..25e9239
+Fast-forward
+ RoboGrade/lab8-SparsePolynomialTest.txt | 330 ++++++++++++++++++++++++++++++++
+ 1 file changed, 330 insertions(+)
+ create mode 100644 RoboGrade/lab8-SparsePolynomialTest.txt
+Going back in time to: 2017-11-14 20:00
+At hash 0437c3e2d1327b81e3e4af2f2870bf11a663b61f
+
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git2/cse131-f17-students key wei.xianda testfilesource TermTest package lab8 repo ./GradingRepos/./cse131-f17-students-wei.xianda
+     [copy] Copying 1 file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/Term
+    [mkdir] Created dir: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/TermTest
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:24: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Term t = new Term(coeff, degree);
+    [javac] 			         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:33: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Term t = new Term(coeff, degree);
+    [javac] 			         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:34: error: cannot find symbol
+    [javac] 			assertEquals("Constructed Term has wrong coefficient", coeff, t.getCoefficient(), .001);
+    [javac] 			                                                               ^
+    [javac]   symbol:   method getCoefficient()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:35: error: cannot find symbol
+    [javac] 			assertEquals("Constructed Term has wrong power", degree, t.getDegree());
+    [javac] 			                                                          ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:57: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				Term t = new Term(a, degree);
+    [javac] 				         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:58: error: cannot find symbol
+    [javac] 				assertEquals(result, t.evaluateTermAtX(x), .001);
+    [javac] 				                      ^
+    [javac]   symbol:   method evaluateTermAtX(double)
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:73: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Term t = new Term(coeff, degree);
+    [javac] 			         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:93: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			identicals[i] = new Term(a, degree);
+    [javac] 			                ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:118: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 		Term t1 = new Term(a, degree);
+    [javac] 		          ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/TermTest.java:127: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Term t2 = new Term(aprime, dprime);
+    [javac] 			          ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] 10 errors
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test TermTest
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+test:
+    [junit] Running lab8.TermTest
+    [junit] Testsuite: lab8.TermTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] lab8.TermTest
+    [junit] java.lang.ClassNotFoundException: lab8.TermTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD FAILED
+/Users/roncytron/Desktop/131f17/cse247-support/build.xml:33: Test lab8.TermTest failed
+
+Total time: 0 seconds
+========
+Testing in ./GradingRepos/./cse131-f17-students-wei.xianda: lab8 as of 2017-11-21 20:00
+========
+Now in: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 25e9239 robograde
+No local changes to save
+
+Already up-to-date.
+Going back in time to: 2017-11-21 20:00
+At hash 78cac5adee525a2289e1a35ebb33c688d375b9ee
+
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git2/cse131-f17-students key wei.xianda testfilesource TermTest package lab8 repo ./GradingRepos/./cse131-f17-students-wei.xianda
+     [copy] Copying 1 file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/Term
+    [mkdir] Created dir: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/TermTest
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test TermTest
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+test:
+    [junit] Running lab8.TermTest
+    [junit] Testsuite: lab8.TermTest
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+    [junit] 
+    [junit] Testcase: testHashCodeAndEquals took 0.002 sec
+    [junit] Testcase: testInit took 0 sec
+    [junit] Testcase: testToString took 0.003 sec
+    [junit] Testcase: testGetters took 0.001 sec
+    [junit] Testcase: testDifferentTermsNotEqual took 0 sec
+    [junit] Testcase: testEvaluate took 0.003 sec
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing lab8 on 2017-11-23 17:35:33 -0600
+-------------------

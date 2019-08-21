@@ -1,0 +1,80 @@
+-------------------
+CSE247 Robot tester starts testing lab7 on 2017-11-16 01:45:14 -0600
+
+========
+Testing in ./GradingRepos/./cse131-f17-students-wei.xianda: lab7 as of 2017-11-14 20:00
+========
+Now in: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 57f3e24 robograde
+No local changes to save
+
+Updating 57f3e24..130dde7
+Fast-forward
+ RoboGrade/lab7-Second30Percent.txt | 75 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 75 insertions(+)
+ create mode 100644 RoboGrade/lab7-Second30Percent.txt
+Going back in time to: 2017-11-14 20:00
+At hash 0437c3e2d1327b81e3e4af2f2870bf11a663b61f
+
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git2/cse131-f17-students key wei.xianda testfilesource StudentAndCourseTest package lab7 repo ./GradingRepos/./cse131-f17-students-wei.xianda
+     [copy] Copying 1 file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab7
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab7/Student
+    [mkdir] Created dir: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab7/Course
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab7/StudentAndCourseTest
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test StudentAndCourseTest
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+test:
+    [junit] Running lab7.StudentAndCourseTest
+    [junit] Testsuite: lab7.StudentAndCourseTest
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testcase: testCreateLegacy took 0.009 sec
+    [junit] Testcase: testAddStudent took 0.012 sec
+    [junit] Testcase: testSubmitGrade took 0 sec
+    [junit] Testcase: testAverageGPA took 0.023 sec
+    [junit] Testcase: testGetClassStanding took 0 sec
+    [junit] Testcase: testCourseToString took 0.001 sec
+    [junit] Testcase: testStudentToString took 0.001 sec
+    [junit] Testcase: testStudentInit took 0.001 sec
+    [junit] Testcase: testCourseInit took 0 sec
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing lab7 on 2017-11-16 01:45:18 -0600
+-------------------

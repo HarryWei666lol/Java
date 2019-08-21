@@ -1,0 +1,329 @@
+-------------------
+CSE247 Robot tester starts testing lab8 on 2017-11-23 17:35:39 -0600
+
+========
+Testing in ./GradingRepos/./cse131-f17-students-wei.xianda: lab8 as of 2017-11-14 20:00
+========
+Now in: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 25e9239 robograde
+No local changes to save
+
+Updating 25e9239..2fd1c8c
+Fast-forward
+ RoboGrade/lab8-TermTest.txt | 27 ++++++++++++++++-----------
+ 1 file changed, 16 insertions(+), 11 deletions(-)
+Going back in time to: 2017-11-14 20:00
+At hash 0437c3e2d1327b81e3e4af2f2870bf11a663b61f
+
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git2/cse131-f17-students key wei.xianda testfilesource SparsePolynomialTest package lab8 repo ./GradingRepos/./cse131-f17-students-wei.xianda
+     [copy] Copying 1 file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/Term
+    [mkdir] Created dir: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/SparsePolynomial
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:28: error: SparsePolynomial is not abstract and does not override abstract method addTerm(Term) in Polynomial
+    [javac] public class SparsePolynomial implements Polynomial {
+    [javac]        ^
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:63: error: cannot find symbol
+    [javac] 		double maxy = this.evaluate(lowx);
+    [javac] 		                  ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:64: error: cannot find symbol
+    [javac] 		double miny = this.evaluate(lowx);
+    [javac] 		                  ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:66: error: cannot find symbol
+    [javac] 			double y = this.evaluate(x);
+    [javac] 			               ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:73: error: cannot find symbol
+    [javac] 			double y = this.evaluate(x);
+    [javac] 			               ^
+    [javac]   symbol: method evaluate(double)
+    [javac] 5 errors
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/SparsePolynomialTest
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:62: error: cannot find symbol
+    [javac] 		assertEquals("The degree of a default constructed Polynomial should be 0", 0, new SparsePolynomial().degree());
+    [javac] 		                                                                                                    ^
+    [javac]   symbol:   method degree()
+    [javac]   location: class SparsePolynomial
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:67: error: cannot find symbol
+    [javac] 			assertEquals("Polynomial " + sbp + " should have degree " + (i-1), i-1, sbp.degree());
+    [javac] 			                                                                           ^
+    [javac]   symbol:   method degree()
+    [javac]   location: variable sbp of type SparsePolynomial
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:74: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Term t = new Term(randomNonZero(), degree);
+    [javac] 			         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:113: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				new Term[] { new Term(131,0), new Term(1, 2) }
+    [javac] 				             ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:113: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				new Term[] { new Term(131,0), new Term(1, 2) }
+    [javac] 				                              ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:116: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				new Term[] { new Term(3,3), new Term(4,1), new Term(0,5) }
+    [javac] 				             ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:116: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				new Term[] { new Term(3,3), new Term(4,1), new Term(0,5) }
+    [javac] 				                            ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:116: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 				new Term[] { new Term(3,3), new Term(4,1), new Term(0,5) }
+    [javac] 				                                           ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:123: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 		Polynomial derivP = new SparsePolynomial(new Term[] { new Term(2,1) });
+    [javac] 		                                                      ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:170: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 		Polynomial p1 = new SparsePolynomial(new Term[] { new Term(0,5), new Term(1,10)});
+    [javac] 		                                                  ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:170: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 		Polynomial p1 = new SparsePolynomial(new Term[] { new Term(0,5), new Term(1,10)});
+    [javac] 		                                                                 ^
+    [javac]   required: no arguments
+    [javac]   found: int,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:262: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			Polynomial p3 = p1.addTerm(new Term(randomNonZero(),i));
+    [javac] 			                           ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:300: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			ans[i] = new Term(coefficients[i], i);
+    [javac] 			         ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:340: error: cannot find symbol
+    [javac] 		if (!(t.getDegree()==0 && p.degree()==0) && t.getDegree() != p.degree()+1) {
+    [javac] 		       ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:340: error: cannot find symbol
+    [javac] 		if (!(t.getDegree()==0 && p.degree()==0) && t.getDegree() != p.degree()+1) {
+    [javac] 		                                             ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:344: error: cannot find symbol
+    [javac] 		Term[] ans = new Term[t.getDegree()+1];
+    [javac] 		                       ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:348: error: cannot find symbol
+    [javac] 		ans[t.getDegree()] = t;
+    [javac] 		     ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:363: error: cannot find symbol
+    [javac] 			int degree = t.getDegree();
+    [javac] 			              ^
+    [javac]   symbol:   method getDegree()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:364: error: cannot find symbol
+    [javac] 			double coeff = t.getCoefficient();
+    [javac] 			                ^
+    [javac]   symbol:   method getCoefficient()
+    [javac]   location: variable t of type Term
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java:402: error: constructor Term in class Term cannot be applied to given types;
+    [javac] 			return new Term(coeff, ++degree);
+    [javac] 			       ^
+    [javac]   required: no arguments
+    [javac]   found: double,int
+    [javac]   reason: actual and formal argument lists differ in length
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:28: error: SparsePolynomial is not abstract and does not override abstract method addTerm(Term) in Polynomial
+    [javac] public class SparsePolynomial implements Polynomial {
+    [javac]        ^
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:63: error: cannot find symbol
+    [javac] 		double maxy = this.evaluate(lowx);
+    [javac] 		                  ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:64: error: cannot find symbol
+    [javac] 		double miny = this.evaluate(lowx);
+    [javac] 		                  ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:66: error: cannot find symbol
+    [javac] 			double y = this.evaluate(x);
+    [javac] 			               ^
+    [javac]   symbol: method evaluate(double)
+    [javac] /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomial.java:73: error: cannot find symbol
+    [javac] 			double y = this.evaluate(x);
+    [javac] 			               ^
+    [javac]   symbol: method evaluate(double)
+    [javac] Note: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 25 errors
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test SparsePolynomialTest
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+test:
+    [junit] Running lab8.SparsePolynomialTest
+    [junit] Testsuite: lab8.SparsePolynomialTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] lab8.SparsePolynomialTest
+    [junit] java.lang.ClassNotFoundException: lab8.SparsePolynomialTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD FAILED
+/Users/roncytron/Desktop/131f17/cse247-support/build.xml:33: Test lab8.SparsePolynomialTest failed
+
+Total time: 0 seconds
+========
+Testing in ./GradingRepos/./cse131-f17-students-wei.xianda: lab8 as of 2017-11-21 20:00
+========
+Now in: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda
+Your branch is up-to-date with 'origin/master'.
+HEAD is now at 2fd1c8c robograde
+No local changes to save
+
+Already up-to-date.
+Going back in time to: 2017-11-21 20:00
+At hash 78cac5adee525a2289e1a35ebb33c688d375b9ee
+
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git2/cse131-f17-students key wei.xianda testfilesource SparsePolynomialTest package lab8 repo ./GradingRepos/./cse131-f17-students-wei.xianda
+     [copy] Copying 1 file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/Term
+    [mkdir] Created dir: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/SparsePolynomial
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling lab8/SparsePolynomialTest
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/bin
+    [javac] Note: /Users/roncytron/Desktop/131f17/cse247-support/GradingRepos/cse131-f17-students-wei.xianda/labs/lab8/SparsePolynomialTest.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test SparsePolynomialTest
+Buildfile: /Users/roncytron/Desktop/131f17/cse247-support/build.xml
+
+test:
+    [junit] Running lab8.SparsePolynomialTest
+    [junit] Testsuite: lab8.SparsePolynomialTest
+    [junit] p2 is lab8.SparsePolynomial@883c0f29
+    [junit] p2's derivative is lab8.SparsePolynomial@c9ee0b65
+    [junit] Newly constructed poly is lab8.SparsePolynomial@1f
+    [junit] Showing toString() for a missing term: lab8.SparsePolynomial@89bba7a3
+    [junit] Showing toString() for summed poly lab8.SparsePolynomial@ca3af29
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+    [junit] Output:
+    [junit] p2 is lab8.SparsePolynomial@883c0f29
+    [junit] p2's derivative is lab8.SparsePolynomial@c9ee0b65
+    [junit] Newly constructed poly is lab8.SparsePolynomial@1f
+    [junit] Showing toString() for a missing term: lab8.SparsePolynomial@89bba7a3
+    [junit] Showing toString() for summed poly lab8.SparsePolynomial@ca3af29
+    [junit] 
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] p2 is lab8.SparsePolynomial@883c0f29
+    [junit] p2's derivative is lab8.SparsePolynomial@c9ee0b65
+    [junit] Newly constructed poly is lab8.SparsePolynomial@1f
+    [junit] Showing toString() for a missing term: lab8.SparsePolynomial@89bba7a3
+    [junit] Showing toString() for summed poly lab8.SparsePolynomial@ca3af29
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testToArray took 0.002 sec
+    [junit] Testcase: testSum took 0.002 sec
+    [junit] Testcase: testDeriv took 0 sec
+    [junit] Testcase: testEval1 took 0.001 sec
+    [junit] Testcase: testEval2 took 0.001 sec
+    [junit] Testcase: testPrint took 0 sec
+    [junit] Testcase: testZeros took 0 sec
+    [junit] Testcase: testInit took 0 sec
+    [junit] Testcase: testOneMissingTerm took 0 sec
+    [junit] Testcase: testLikeTheresNoTomorrow took 0.025 sec
+    [junit] Testcase: testNoMutateAddTerm took 0.002 sec
+    [junit] Testcase: testOnlyOneInstanceVar took 0 sec
+    [junit] Testcase: testDegree took 0.005 sec
+    [junit] Testcase: testNoMutateSum took 0.001 sec
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing lab8 on 2017-11-23 17:35:48 -0600
+-------------------
